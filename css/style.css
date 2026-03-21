@@ -1,0 +1,118 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004a8d;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Navegação */
+nav {
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Faz os links quebrarem linha no celular */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1000px; /* Largura máxima no PC */
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #004a8d;
+    margin-bottom: 15px;
+    border-left: 5px solid #004a8d;
+    padding-left: 10px;
+}
+
+/* Mídias (Vídeo e Imagem) */
+video, img {
+    border-radius: 5px;
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto; /* Mantém a proporção */
+}
+
+/* Rodapé */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 40px;
+}
+
+/* --- RESPONSIVIDADE (Celulares) --- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column; /* Menu vira uma lista vertical */
+        text-align: center;
+    }
+
+    nav a {
+        border-bottom: 1px solid #004488;
+    }
+
+    main {
+        margin: 10px auto;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
