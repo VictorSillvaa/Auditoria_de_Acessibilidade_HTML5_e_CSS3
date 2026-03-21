@@ -1,2 +1,72 @@
 # Auditoria_de_Acessibilidade_HTML5_e_CSS3
-📰 Portal Notícias PB - Auditoria de AcessibilidadeEste projeto consiste em um portal de notícias regional focado em acessibilidade web (HTML5/CSS3) e validação de dados. O sistema inclui uma página principal de notícias e um fluxo de cadastro de usuários com validações em tempo real.📂 Estrutura de ArquivosO projeto está organizado da seguinte forma:HTML.html: Página principal (Home) do portal.cadastro/conta.html: Interface de formulário para criação de conta.css/style.css: Estilização geral da página principal.cadastro/css/conta.css: Estilização focada e centralizada para o formulário.🛠️ Descrição Técnica dos Arquivos1. Página Principal (HTML.html)Página de consumo de conteúdo que utiliza tags semânticas para facilitar a leitura por tecnologias assistivas (leitores de tela).Destaques de Acessibilidade:Uso de header, nav, main, article e footer.Mídia Inclusiva: Tag <video> com suporte a múltiplos formatos (.webm, .mp4) e inclusão de trilha de legendas via tag <track>.Navegação Interna: Links de âncora para salto rápido entre seções (Principais Notícias e Internacionais).Contraste e Legibilidade: Texto estruturado com títulos hierárquicos (h1, h2, h3).2. Página de Cadastro (cadastro/conta.html)Interface interativa projetada para coletar dados do usuário seguindo rigorosos critérios de usabilidade.Recursos de Validação e UX:Associação Label-Input: Todos os campos possuem <label for="..."> vinculados ao id do input. Clicar no texto do rótulo foca automaticamente o campo de digitação.Validação de Formulário: * Uso de atributos required para campos obrigatórios.Atributo pattern no campo de telefone para garantir o formato brasileiro: (XX) XXXXX-XXXX.Restrição de minlength="6" para segurança da senha.Feedback ao Usuário: Script em JavaScript que intercepta o envio, exibe um alerta de sucesso e redireciona o usuário de volta à home.Estilo Centralizado: CSS específico para manter o formulário no centro da visão do usuário, melhorando o foco e a atenção.📋 Critérios de Auditoria AtendidosItemDescriçãoStatus1Tags Semânticas (HTML5)✅ Concluído2Navegação por Teclado (:focus)✅ Concluído3Associação de Label e Campo✅ Concluído4Validação com required e pattern✅ Concluído5Mídia Acessível (Legendas e Poster)✅ Concluído🚀 Como executarClone o repositório.Certifique-se de manter a estrutura de pastas para que os caminhos de CSS e Imagens funcionem.Abra o arquivo HTML.html em qualquer navegador moderno.Desenvolvedor: José Victor da Silva NascimentoAno: 2026
+📰 Portal Notícias PB — Auditoria de Acessibilidade
+Este projeto é um portal de notícias regional desenvolvido com foco total em acessibilidade web (WCAG), semântica HTML5, estilização CSS3 e validações rigorosas de dados. O sistema foi projetado para ser totalmente navegável por tecnologias assistivas, como leitores de tela.
+
+📂 Estrutura do Projeto
+A organização dos arquivos segue o padrão de separação de responsabilidades para facilitar a manutenção:
+
+. HTML.html: Ponto de entrada (Home) do portal.
+
+. cadastro/conta.html: Interface de formulário para criação de conta.
+
+. css/style.css: Folha de estilo global (Layout da Home).
+
+. cadastro/css/conta.css: Estilização específica e centralizada para o cadastro.
+
+🛠️ Descrição Técnica
+1. Página Principal (HTML.html)
+Desenvolvida para consumo de conteúdo acessível.
+
+Semântica Avançada: Uso de header, nav, main, article, section e footer.
+
+Mídia Inclusiva: Implementação da tag <video> com múltiplos formatos (.webm, .mp4), atributo poster e suporte a legendas via tag <track>.
+
+Âncoras de Navegação: Links internos que permitem saltar diretamente para as seções de interesse.
+
+
+2. Página de Cadastro (cadastro/conta.html)
+Focada na interação do usuário e integridade dos dados.
+
+. Acessibilidade de Formulários: Associação explícita entre <label> e <input> via atributos for e id.
+
+. Validações Nativas:
+
+. required: Impede o envio de campos vazios.
+
+. pattern: Regex para validar o formato de telefone brasileiro (XX) XXXXX-XXXX.
+
+. minlength: Garantia de segurança mínima para senhas.
+
+. Feedback Dinâmico: JavaScript integrado para exibir alertas de confirmação e gerenciar redirecionamentos pós-cadastro.
+
+📋 Critérios de Auditoria Atendidos
+
+Item  Critério Técnico        Implementação                                         Status
+1     Semântica HTML5         Semântica HTML5                                      ✅ Concluído
+2     Navegação por Teclado   Pseudo-classe :focus visível em todos os elementos   ✅ Concluído
+3     Associação de Campos    Relação label + input funcional                      ✅ Concluído
+4     Validação de Dados      Atributos required e pattern ativos                  ✅ Concluído
+5     Mídia Acessível         Vídeos com legendas e caminhos relativos corretos    ✅ Concluído
+
+
+
+🚀 Como Executar o Projeto
+1. Clone o repositório:
+
+Bash
+git clone https://github.com/VictorSillvaa/Auditoria_de_Acessibilidade_HTML5_e_CSS3.git
+
+
+2. Navegue até a pasta:
+
+Bash
+cd Auditoria_de_Acessibilidade_HTML5_e_CSS3
+
+3. Abra o navegador:
+Basta clicar duas vezes no arquivo HTML.html ou utilizar a extensão Live Server do VS Code.
+
+
+👤 Desenvolvedor
+José Victor da Silva Nascimento 📅 Ano: 2026
+
+🏗️ Projeto: Auditoria de Acessibilidade Web
